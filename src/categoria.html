@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria - Blog de Cocina</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <include src="src/header.html"></include>
+    <main role="main">
+        <section>
+            <h2>Nuestras Recetas</h2>
+            <ul class="recipe-list" role="list">
+                <li role="listitem">
+                    <a href="detalle-pasta.html">
+                        <img src="img/pesto-plato.jpg" alt="Plato de pasta al pesto con albahaca">
+                        <h3>Pasta al Pesto</h3>
+                    </a>
+                </li>
+                <li role="listitem">
+                    <a href="detalle-soup.html">
+                        <img src="img/sopa-de-tomate.jpg" alt="Tazón de sopa de tomate cremosa">
+                        <h3>Sopa de Tomate</h3>
+                    </a>
+                </li>
+                <li role="listitem">
+                    <img src="img/ensalada-cesar.jpg" alt="Ensalada César con crutones y queso">
+                    <h3>Ensalada César</h3>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <include src="src/footer.html"></include>
+</body>
+</html>

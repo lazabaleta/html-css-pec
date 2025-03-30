@@ -1,8 +1,185 @@
-html {
-  color-scheme: light dark;
-  font-family: system-ui;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+header[role="banner"] {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-toggle {
+  display: none;
+  background: #34495e;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100%;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: underline;
+  padding: 5px;
+  display: block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background: #34495e;
+  outline: 2px solid #fff;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recipe-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.recipe-list li {
+  text-align: center;
+}
+
+.recipe-list img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+.recipe-list a {
+  text-decoration: underline;
+  color: #2c3e50;
+}
+
+.recipe-list a:hover,
+.recipe-list a:focus {
+  color: #e74c3c;
+  outline: 2px solid #2c3e50;
+}
+
+.featured-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.video {
+  margin: 20px 0;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+footer[role="contentinfo"] {
+  text-align: center;
+  padding: 10px;
+  background: #ecf0f1;
+  color: #333;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+      display: block;
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #2c3e50;
+  }
+
+  nav ul.show {
+      display: flex;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  .recipe-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.2rem;
+  }
+
+  h2 {
+      font-size: 1.1rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+
+  .gallery img {
+      max-width: 100%;
+  }
 }

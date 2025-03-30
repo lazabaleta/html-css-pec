@@ -1,15 +1,21 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcel Vanilla App</title>
+    <title>Portada - Blog de Cocina</title>
     <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
-  </head>
-  <body>
-    <h1>Parcel Vanilla App</h1>
-    <p>Edit <code>src/index.html</code> to get started!</p>
-    
-  </body>
+</head>
+<body>
+    <include src="src/header.html"></include>
+    <main role="main">
+        <section>
+            <h2>Bienvenidos a Blog de Cocina</h2>
+            <p>Explora el arte de la cocina con nuestro blog. Aquí encontrarás recetas deliciosas, consejos prácticos y mucho más para convertirte en un chef en casa.</p>
+            <p>Visita nuestra <a href="categoria.html">sección de recetas</a> para descubrir platos como la Pasta al Pesto y la Sopa de Tomate, o consulta nuestras <a href="enlaces.html">fuentes y enlaces</a> para más inspiración.</p>
+        </section>
+    </main>
+    <include src="src/footer.html"></include>
+</body>
 </html>

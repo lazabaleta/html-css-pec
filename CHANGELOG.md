@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [3.0.0](https://github.com/lazabaleta/html-css-pec/compare/v2.0.0...v3.0.0) (2025-05-02)
+
+
+### Features
+
+* updated to pec2. ([c79378c](https://github.com/lazabaleta/html-css-pec/commit/c79378c8cda00f614305cf78ad136e715991ad94))
+
 ## [2.0.0](https://github.com/lazabaleta/html-css-pec/compare/v1.0.0...v2.0.0) (2025-03-30)
 
 

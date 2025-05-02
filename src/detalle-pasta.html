@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle - Blog de Cocina - Pasta al Pesto</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle - Blog de Cocina - Pasta al Pesto</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js"></script>
 </head>
 <body>
-    <include src="src/header.html"></include>
-    <main role="main">
-        <article>
-            <h2>Pasta al Pesto</h2>
-            <img src="img/pesto-plato.jpg" alt="Plato de pasta al pesto con albahaca fresca" class="featured-image">
-            <p>La pasta al pesto es un clásico italiano que combina la frescura del albahaca con el sabor intenso del queso parmesano. Es perfecta para una cena rápida o una comida especial.</p>
-            <div class="gallery">
-                <img src="img/pesto-ingredientes.jpg" alt="Ingredientes para pesto: albahaca, piñones y aceite">
-            </div>
-            <p>Preparar el pesto casero es sencillo: tritura albahaca fresca, piñones, ajo, queso parmesano y aceite de oliva. Cocina tu pasta favorita (como espaguetis o penne) y mezcla todo bien.</p>
-            <div class="gallery">
-                <img src="img/pesto-al-mortero.jpg" alt="Preparación del pesto en un mortero">
-            </div>
-            <p>Este plato no solo es delicioso, sino también versátil. Puedes añadir pollo, gambas o simplemente disfrutarlo como está. ¡Un toque de limón puede elevar aún más los sabores!</p>
-            <div class="gallery">
-                <img src="img/pesto-al-plato.jpg" alt="Pasta al pesto servida en un plato">
-            </div>
-            <p>Aquí puedes ver el resumen de la preparación</p>
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/U9OX3q9_oT0?si=oCWFh9HC4czRGdAC" title="Tutorial: Cómo hacer pasta al pesto" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </article>
-    </main>
-    <include src="src/footer.html"></include>
+  <include src="src/header.html"></include>
+  <main role="main">
+    <article>
+      <h2>Pasta al Pesto</h2>
+
+      <picture>
+        <source srcset="img/pesto-plato.jpg?as=avif" type="image/avif" />
+        <source srcset="img/pesto-plato.jpg?as=webp" type="image/webp" />
+        <source srcset="img/pesto-plato.jpg?as=webp&width=800" type="image/webp" />
+        <img src="img/pesto-plato.jpg?width=200" alt="Plato de pasta al pesto con albahaca fresca" class="featured-image" />
+      </picture>
+
+      <p>La pasta al pesto es un clásico italiano que combina la frescura del albahaca con el sabor intenso del queso parmesano. Es perfecta para una cena rápida o una comida especial.</p>
+
+      <div class="gallery">
+        <picture>
+          <source srcset="img/pesto-ingredientes.jpg?as=avif" type="image/avif" />
+          <source srcset="img/pesto-ingredientes.jpg?as=webp" type="image/webp" />
+          <source srcset="img/pesto-ingredientes.jpg?as=webp&width=800" type="image/webp" />
+          <img src="img/pesto-ingredientes.jpg?width=200" alt="Ingredientes para pesto: albahaca, piñones y aceite" />
+        </picture>
+      </div>
+
+      <p>Preparar el pesto casero es sencillo: tritura albahaca fresca, piñones, ajo, queso parmesano y aceite de oliva. Cocina tu pasta favorita (como espaguetis o penne) y mezcla todo bien.</p>
+
+      <div class="gallery">
+        <picture>
+          <source srcset="img/pesto-al-mortero.jpg?as=avif" type="image/avif" />
+          <source srcset="img/pesto-al-mortero.jpg?as=webp" type="image/webp" />
+          <source srcset="img/pesto-al-mortero.jpg?as=webp&width=800" type="image/webp" />
+          <img src="img/pesto-al-mortero.jpg?width=200" alt="Preparación del pesto en un mortero" />
+        </picture>
+      </div>
+
+      <p>Este plato no solo es delicioso, sino también versátil. Puedes añadir pollo, gambas o simplemente disfrutarlo como está. ¡Un toque de limón puede elevar aún más los sabores!</p>
+
+      <div class="gallery">
+        <picture>
+          <source srcset="img/pesto-al-plato.jpg?as=avif" type="image/avif" />
+          <source srcset="img/pesto-al-plato.jpg?as=webp" type="image/webp" />
+          <source srcset="img/pesto-al-plato.jpg?as=webp&width=800" type="image/webp" />
+          <img src="img/pesto-al-plato.jpg?width=200" alt="Pasta al pesto servida en un plato" />
+        </picture>
+      </div>
+
+      <p>Aquí puedes ver el resumen de la preparación</p>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U9OX3q9_oT0?si=oCWFh9HC4czRGdAC" title="Tutorial: Cómo hacer pasta al pesto" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+  </main>
+  <include src="src/footer.html"></include>
 </body>
 </html>

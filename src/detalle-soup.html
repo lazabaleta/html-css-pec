@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle - Blog de Cocina - Sopa de Tomate</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle - Blog de Cocina - Sopa de Tomate</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js"></script>
 </head>
 <body>
-    <include src="src/header.html"></include>
-    <main role="main">
-        <article>
-            <h2>Sopa de Tomate</h2>
-            <img src="img/sopa-de-tomate.jpg" alt="Tazón de sopa de tomate cremosa con hierbas" class="featured-image">
-            <p>La sopa de tomate es un plato reconfortante ideal para días fríos. Su sabor rico y cremoso proviene de tomates frescos o en conserva, combinados con especias simples.</p>
-            <div class="gallery">
-                <img src="img/sopa-de-tomate-ingredientes.jpg" alt="Ingredientes para sopa: tomates y cebolla">
-            </div>
-            <p>Para prepararla, sofríe cebolla y ajo, añade tomates triturados, caldo de verduras y un toque de crema. Cocina a fuego lento y tritura hasta obtener una textura suave.</p>
-            <div class="gallery">
-                <img src="img/sopa-de-tomate-olla.jpg" alt="Cocción de la sopa en una olla">
-            </div>
-            <p>Sírvela con crutones o una rebanada de pan tostado. Es una receta fácil de personalizar: prueba añadir albahaca fresca o un poco de queso rallado para un giro especial.</p>
-            <div class="gallery">
-                <img src="img/sopa-de-tomate-pan.jpg" alt="Sopa de tomate servida con crutones">
-            </div>
-            <p>Aquí puedes ver el resumen de la preparación</p>
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zC0Tl-4auEo?si=xoSp1Klwo1NbBYh-" title="Tutorial: Cómo hacer sopa de tomate" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </article>
-    </main>
-    <include src="src/footer.html"></include>
+  <include src="src/header.html"></include>
+  <main role="main">
+    <article>
+      <h2>Sopa de Tomate</h2>
+
+      <picture>
+        <source srcset="img/sopa-de-tomate.jpg?as=avif" type="image/avif" />
+        <source srcset="img/sopa-de-tomate.jpg?as=webp" type="image/webp" />
+        <source srcset="img/sopa-de-tomate.jpg?as=webp&width=800" type="image/webp" />
+        <img src="img/sopa-de-tomate.jpg?width=200" alt="Tazón de sopa de tomate cremosa con hierbas" class="featured-image" />
+      </picture>
+
+      <p>La sopa de tomate es un plato reconfortante ideal para días fríos. Su sabor rico y cremoso proviene de tomates frescos o en conserva, combinados con especias simples.</p>
+
+      <div class="gallery">
+        <picture>
+          <source srcset="img/sopa-de-tomate-ingredientes.jpg?as=avif" type="image/avif" />
+          <source srcset="img/sopa-de-tomate-ingredientes.jpg?as=webp" type="image/webp" />
+          <source srcset="img/sopa-de-tomate-ingredientes.jpg?as=webp&width=800" type="image/webp" />
+          <img src="img/sopa-de-tomate-ingredientes.jpg?width=200" alt="Ingredientes para sopa: tomates y cebolla" />
+        </picture>
+      </div>
+
+      <p>Para prepararla, sofríe cebolla y ajo, añade tomates triturados, caldo de verduras y un toque de crema. Cocina a fuego lento y tritura hasta obtener una textura suave.</p>
+
+      <div class="gallery">
+        <picture>
+          <source srcset="img/sopa-de-tomate-olla.jpg?as=avif" type="image/avif" />
+          <source srcset="img/sopa-de-tomate-olla.jpg?as=webp" type="image/webp" />
+          <source srcset="img/sopa-de-tomate-olla.jpg?as=webp&width=800" type="image/webp" />
+          <img src="img/sopa-de-tomate-olla.jpg?width=200" alt="Cocción de la sopa en una olla" />
+        </picture>
+      </div>
+
+      <p>Sírvela con crutones o una rebanada de pan tostado. Es una receta fácil de personalizar: prueba añadir albahaca fresca o un poco de queso rallado para un giro especial.</p>
+
+      <div class="gallery">
+        <picture>
+          <source srcset="img/sopa-de-tomate-pan.jpg?as=avif" type="image/avif" />
+          <source srcset="img/sopa-de-tomate-pan.jpg?as=webp" type="image/webp" />
+          <source srcset="img/sopa-de-tomate-pan.jpg?as=webp&width=800" type="image/webp" />
+          <img src="img/sopa-de-tomate-pan.jpg?width=200" alt="Sopa de tomate servida con crutones" />
+        </picture>
+      </div>
+
+      <p>Aquí puedes ver el resumen de la preparación</p>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zC0Tl-4auEo?si=xoSp1Klwo1NbBYh-" title="Tutorial: Cómo hacer sopa de tomate" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </article>
+  </main>
+  <include src="src/footer.html"></include>
 </body>
 </html>

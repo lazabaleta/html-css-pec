@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [4.0.0](https://github.com/lazabaleta/html-css-pec/compare/v3.0.1...v4.0.0) (2025-05-21)
+
+
+### Features
+
+* lazy loading for images. ([d867a66](https://github.com/lazabaleta/html-css-pec/commit/d867a66676c3740054078707fa0371b77a597747))
+* lazy loading for scripts. ([7db1062](https://github.com/lazabaleta/html-css-pec/commit/7db106216420533f4d173d7ec4400a94176cf976))
+
 ## [3.0.1](https://github.com/lazabaleta/html-css-pec/compare/v3.0.0...v3.0.1) (2025-05-02)
 
 

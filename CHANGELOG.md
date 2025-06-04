@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [4.1.0](https://github.com/lazabaleta/html-css-pec/compare/v4.0.0...v4.1.0) (2025-06-04)
+
+
+### Features
+
+* modified loading of img. ([d94623e](https://github.com/lazabaleta/html-css-pec/commit/d94623e1fb56e893ea1604f50c99b255b63cd24e))
+
 ## [4.0.0](https://github.com/lazabaleta/html-css-pec/compare/v3.0.1...v4.0.0) (2025-05-21)
 
 

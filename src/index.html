@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portada - Blog de Cocina</title>
+  <link rel="preload" as="image" href="img/pesto-al-plato.jpg?width=800"
+        imagesrcset="
+          img/pesto-al-plato.jpg?as=avif 800w,
+          img/pesto-al-plato.jpg?as=webp 800w,
+          img/pesto-al-plato.jpg?width=800 800w"
+        imagesizes="(max-width: 800px) 100vw, 800px">
   <link rel="stylesheet" href="styles.css">
   <script defer src="app.js"></script>
 </head>
@@ -36,7 +42,7 @@
         <source srcset="img/pesto-al-plato.jpg?as=avif" type="image/avif" />
         <source srcset="img/pesto-al-plato.jpg?as=webp" type="image/webp" />
         <source srcset="img/pesto-al-plato.jpg?as=webp&width=800" type="image/webp" />
-        <img loading="lazy" src="img/pesto-al-plato.jpg?width=200" alt="Pesto servido en un plato" class="clip-image" />
+        <img src="img/pesto-al-plato.jpg?width=800" alt="Pesto servido en un plato" class="clip-image" />
       </picture>
     </section>
   </main>
